@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paynet</title>
+</head>
+<body>
+	<div class="right">
+	    <div class="line">
+	    	<div class="linee">
+	    	<img height="20px" style="border-radius: 50%; padding: 4px;" src="pay.jpg"><p style="position: absolute; top: -10px; right: 215px;">Flagship</p>
+	    	</div>
+	    	<button class="button">X</button>
+	    	<img class="logo" height="45px" src="logo.png"><p class="version">v2.0.46</p>
+	    	<h1 class="vhod">Вход</h1>
+	    	<input class="usr" type="text" value="tezkor94" name="User">
+	    	<input class="pass" id="pswd" type="password" name="Pass">
+	    	<button class="eye">👁</button>
+	    	<a href="#" class="izmen">Изменить пароль</a>
+	    	<hr class="hr">
+	    	
+
+
+
+<style type="text/css">
+body {
+	background-image: url("back.jpg");
+}
+.line {
+	background-color: #E0E0E0;
+	border: 1px solid black;
+	width: 300px;
+	height:380px;
+}
+.linee {
+	background-color: white;
+}
+.right {
+	right: 42%;
+	top: 20%;
+	position: fixed;
+}
+.button {
+	top: 4px;
+	right: 4px;
+	position: absolute;
+	border: white;
+}
+.button:hover {
+	background-color: red;
+	cursor: pointer;
+	border: white;
+}
+.logo {
+	position: absolute;
+	top: 65px;
+	right: 75px;
+}
+.version {
+	position: absolute;
+	top: 55px;
+	right: 15px;
+	font-size: 20px;
+}
+.vhod {
+	position: absolute;
+	top: 110px;
+	right: 115px;
+	color: green;
+	font-family: sans-serif;
+	font-size: 27px;
+}
+.usr {
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    border-radius: 7px;
+    padding: 6px;
+    width: 200px;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+}
+.pass {
+	position: absolute;
+	top: 210px;
+	right: 87px;
+	border-radius: 7px;
+	padding: 6px;
+	background-color: #D3D3D3;
+	border-color: #D3D3D3;
+}
+.eye {
+	border: #E0E0E0;
+	background-color: #E0E0E0;
+	cursor: pointer;
+	position: absolute;
+	top: 210px;
+	right: 50px;
+	padding: 7px;
+}
+.eye:hover {
+	background-color: #D3D3D3;
+	border: #000;
+}
+.voyti {
+	position: absolute;
+	top: 260px;
+	right: 81px;
+	height: 30px;
+	width: 150px;
+	border-radius: 5px;
+	border: green;
+	background-color: #009115;
+	cursor: pointer;
+}
+.voyti:hover {
+	background-color: #00FF25;
+	cursor: pointer;
+}
+.voyti:active {
+	background-color: #009115;
+}
+.izmen {
+	position: absolute;
+	top: 300px;
+	right: 95px;
+	color: black;
+	text-decoration: none;
+}
+.izmen:hover {
+	text-decoration: underline;
+}
+.hr {
+	margin-top: 316px;
+}
+.tm {
+	font-size: 15px;
+	color: #888888;
+	position: absolute;
+	top: 320px;
+	right: 130px;
+}
+</style>
+<script>
+function myFunction() {
+}
+</script>
+<script>
+function verifyPassword() {
+  var pw = document.getElementById("pswd").value;
+  //check empty password field
+  if(pw == "") {
+     document.getElementById("message").innerHTML = "**Fill the password please!";
+     return false;
+  }
+ 
+ //minimum password length validation
+  if(pw.length < 5) {
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+     return false;
+  }
+
+//maximum length of password validation
+  if(pw.length > 15) {
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+     return false;
+  } else {
+     alert("Password is correct");
+  }
+}
+</script>
+<form onsubmit ="return verifyPassword()">
+<!-- Enter Password -->
+<span id = "message" style="position: fixed; right: 80%; top: 1px; color:red"> </span> <br><br>
+
+<!-- Click to verify valid password -->
+<input class="voyti" type = "submit" value = "Войти">
+
+</form>
+<h6 class="tm">© 2004-2021 Paynet<sup>TM</sup></h6>
+
+	    </div>
+	</div>
+	</body>
+</html>
